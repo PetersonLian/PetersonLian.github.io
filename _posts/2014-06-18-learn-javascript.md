@@ -1,8 +1,8 @@
 ---    
 layout : post
-category : note javascript JQuery 
+category : javascript
 tagline : "notes"
-tags : [javascript, JQuery, learn]
+tags : [javascript, JQuery, note]
 ---
 {% include JB/setup %}
 #Javascript
