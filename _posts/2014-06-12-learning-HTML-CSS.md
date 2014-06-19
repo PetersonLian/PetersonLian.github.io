@@ -13,13 +13,13 @@ tags : [html, css, note]
     1. Block VS. Inline Elements. Can your refer?  
     2. Deciding Between `<article>`, `<section>`, or`<div>` Elements  
 # Lesson3
-  *Getting to Know CSS* 
+  *Getting to Know CSS*  
     1. Specificity Points?  
     2. Layering Styles with Multiple Classes?  
     3. Color:rgb(a),hsl(a),key  
 
 # Lesson4
-  *Opening the Box Model*
+  *Opening the Box Model*  
     1. Display:inline, block, inline-block?  
     2. The Space Between Inline-Block Elements?  
     3. Box Model?  
@@ -33,12 +33,12 @@ tags : [html, css, note]
      3. Border Box  
 
 # Lesson5
-  *Positioning Content*
+  *Positioning Content*  
     1. Float:why set width, margin?  
     2. Float May Change an Elements’s Display value:the element is removed from flow?  
 
 # Lesson7
-  *Setting Background & Gradients*
+  *Setting Background & Gradients*  
     1.Background repeat?  
     2.Background Position?  
     3.Background shorthand:
