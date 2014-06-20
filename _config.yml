@@ -2,10 +2,6 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /blog/:year/:month/:day/:title 
 
-#added by ablian
-#change markdown interpreter
-markdown: kramdown
-
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
