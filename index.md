@@ -5,7 +5,7 @@ title: Peterson Lian!连培培!
 {% include JB/setup %}
 ## Who is PetersonLian(连培培)?
    Peterson is a 22 year old guy living in mainland China, earning very low payroll and hoping to see the world better with [Github](http://www.github.com).
-   I am currently very screwed with a huge debt and very happy to meet your.
+   I am currently very screwed by fate and very happy to meet your.
 ## Posts
 <ul class="posts">
   {% for post in site.posts %}
