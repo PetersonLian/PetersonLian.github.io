@@ -11,11 +11,11 @@ The content variable holds the **page/post content** including any sub-template 
 Render the `content` variable **wherever** you want into your template  
 Example Usage:
 
-<body>
-  <div id="sidebar"> ... </div>
-  <div id="main">
-    {{content}}
-  </div>
-</body>
+        <body>
+        <div id="sidebar"> ... </div>
+        <div id="main">
+        {{content}}
+        </div>
+        </body>
 
 See more?Go to this [site](http://jekyllbootstrap.com/lessons/jekyll-introduction.html) where I figured out the answer to the question.
