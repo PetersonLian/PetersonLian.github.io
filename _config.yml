@@ -8,13 +8,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Peterson Lian(AKA 连培培)
+title : Peterson Lian
 tagline: 连培培
 author :
-  name : Peterson Lian(连培培)
+  name : Peterson Lian
   email : lianpeipei202@gmail.com       
-  github : PetersonLian
-  twitter : TBC
+  github : https://github.com/PetersonLian
+  twitter : https://twitter.com/PetersonLian
   feedburner : TBC
 
 # The production_url is only used when full-domain names are needed
