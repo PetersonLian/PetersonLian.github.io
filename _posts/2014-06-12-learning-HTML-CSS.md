@@ -6,7 +6,7 @@ tags : [html, css, note]
 ---
 {% include JB/setup %}
 
-通过[这个网站](/http://learn.shayhowe.com/html-css/)学习HTML&CSS的各种笔记
+通过[这个网站](http://learn.shayhowe.com/html-css/)学习HTML&CSS的各种笔记
 
 # Lesson2 
   *Gettting to Know HTML*  
