@@ -115,15 +115,7 @@ h3 {
 }
 
 #header {
-	width: 500px;
-	margin: 40px auto 50px auto;
-}
-#header h1 {
-	font-size: 32px;
-	margin-bottom: 4px;
-}
-#header h1 a {
-	border: none;
+	margin: 0px auto 0px auto;
 }
 
 #footer {
@@ -136,14 +128,13 @@ h3 {
 
 #content {
 	width: 500px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
 #sidebar {
 	position: absolute;
 	text-align: right;
 	width: 160px;
-	top: 0;
 	left: -240px;
 }
 
@@ -204,22 +195,43 @@ img.center {
 }
 
 
-
+/*added by Peterson Lian*/
 /*** Pagination ***/
-.postnavigation {
+.post_navigation {
 	padding-top: 10px;
-    text-align: center;
-    font-size: 0.85em;
+        text-align: center;
+        font-size: 0.85em;
 }
 
-.postnavigation .left {
+/*.post_navigation li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}*/
+
+.post_navigation .prev {
 	float: left;
 }
-
-.postnavigation .right {
+/*.post_navigation .prev .disabled{
+        float: left;
+        color: grey;
+        background: red;
+}
+*/
+.post_navigation .next {
 	float: right;
 }
+/*.post_navigation .next .disabled{
+    	float: right;
+        color: grey;
+        background: red;
+}
+*/
 
+/*.post_navigation .archive {
+        align: center;
+}*/
+/***end of navigation***/
 
 
 /*** Media Queries ***/
@@ -279,4 +291,23 @@ img.center {
 .icon-anchor:before { content: '\e800'; }
 .icon-anchor {
 	font-size: 65%;
+}
+
+/*added by Peterson Lian*/
+/*post_navigation ul*/
+.post_navigation li{
+    list-style : none;
+}
+
+/*added by Peterson Lian*/
+/***canvas for bubble effect***/
+/***style the 'canvas' aforementioned***/
+#canvas-header {/*a 'header' element*/
+    position: relative;
+    height: 500px;
+}
+
+#myCanvas {
+    position: absolute;
+    left: 150px;
 }
