@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Peterson Lian!连培培!
+title: 连培培 AKA Peterson Lian
 ---
 {% include JB/setup %}
 ## Who is PetersonLian(连培培)?
