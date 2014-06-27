@@ -13,8 +13,8 @@ Example Usage:
 
         <body>
         <div id="sidebar"> ... </div>
-        <div id="main">
-        {{content}}
+        <div id="main">	{% raw %}
+	    {{ content }}{% endraw %}
         </div>
         </body>
 
