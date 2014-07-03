@@ -10,6 +10,7 @@ tags: []
 Quoted from [here](https://www.gnu.org/software/emacs/manual/html_node/eintr/set-_0026-setq.html)  
 >  There are several ways by which a variable can be given a value. One of the ways is to use either the function set or the function setq. Another way is to use let(see let). (The jargon for this process is to bind a variable to a value.)
 Now, you need to ask your self following questions.  
+
 #Q1:what does `set` and `setq` differ?  
 A1:`setq` is like `set` except that the first argument is quoted automatically.  
 It means `(set 'carnivores '(lion tiger leopard))` has the same effect with `(setq carnivores '(lion tiger leopard))`.The first argument `carnivores` must be quoted in `set` statement or else it will be evaluated first without doing anything else.For your better understanding.Supposing you have a argument `carnivores` with value of "lion",if you don't quote it in a `set` statement, the "lion" will be used to store the list "(lion tiger leopard)" witch will be wrong because " Symbol's value as variable is void ".  
