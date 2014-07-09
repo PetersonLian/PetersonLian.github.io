@@ -2,8 +2,8 @@
 layout: post
 title: "emacs useful plugin list"
 description: ""
-category: 
-tags: []
+category: "emacs"
+tags: [emacs, plugin]
 ---
 {% include JB/setup %}
 Here is the List.Just google each option  
