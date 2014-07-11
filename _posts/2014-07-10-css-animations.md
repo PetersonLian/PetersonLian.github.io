@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "CSS animations"
-description: ""
-category: 
-tags: []
+description: "css3 animation; css3 properties"
+category: "CSS3" 
+tags: [CSS3, animation, property]
 ---
 {% include JB/setup %}
 CSS3 Animations
@@ -40,6 +40,7 @@ An animation lets an element gradually change from **one style to another.**
 You can change as many properties you want, as many times you want.  
 You can specify when the change will happen in percent, or you can use the keywords "from" and "to" (which represents 0% and 100%).  
 0% represents the start of the animation, 100% is when the animation is complete.  
+#CSS3 Properties
 ##CSS3 `animation-timing-function` Property
 ###Example  
 Play an animation with the same speed from beginning to end:  
@@ -57,3 +58,16 @@ ease-in:
      The animation has a slow start  
 ###More info about `animation-timing-function`
 [Check it](http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp).  
+##CSS3 `transform` Property
+###Definition and Usage
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+###Example
+Rotate a div element:
+
+    div
+    {
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); /* IE 9 */
+    -webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+    }
+###[More Details](http://www.w3schools.com/cssref/css3_pr_transform.asp)
