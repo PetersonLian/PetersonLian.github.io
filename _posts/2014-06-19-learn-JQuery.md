@@ -19,16 +19,19 @@ This is what I refine from the site above.
 ##2.`$(window).load(function(){...})`
 
 >  run *ONCE* when entire *PAGE*(images or iframes) is ready, not just DOM!
+
 ##3.named function   
 >  e.g.   
 >function readFn( jQuery ){     
 >}
+
 ##4.put jQuery into *NO-CONFLICT* mode    
 >  key code: `jQuery.noConflict()`   
 >  e.g.      
     var $j = jQuery.noConflict();
 >  now,you can use `$j` instead of `$`     
 >  you can also name it as `jq` or `$JQ` etc. instead of `$j`
+
 ##5.another way for putting jQuery into *NO-CONFLICT* mode  
           
           <!-- Another way to put jQuery into no-conflict mode. -->
@@ -109,3 +112,7 @@ following is an example code snippet:
 
 ##11.[`.index()`](http://learn.jquery.com/using-jquery-core/understanding-index/) function  
 
+##12.Draggable Widget
+In **jQuery UI** library.  
+Allow elements to be moved using the mouse.  
+[An Example](http://jenniferdewalt.com/building_blocks.html) is here.  
