@@ -128,6 +128,7 @@ h3 {
     /*scenario:under 'Archieve', you will find that some post'links will be overlapped by 'canvas'*/
         /*make that link un cliclable*/
         /*that's why we set 'z-index' greatter than #myCanvas*/
+        padding-bottom: 20px;
 }
 
 #footer {
