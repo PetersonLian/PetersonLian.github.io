@@ -105,22 +105,33 @@ h3 {
 .nopadding { padding: 0; }
 .nounderline { text-decoration: underline; }
 
+/*added by Peterson Lian*/
+/*post_navigation ul*/
+.post_navigation li{
+    list-style : none;
+}
 
 
 /*** Structure ***/
 #page {
 	width: 500px;
-	margin: 0 auto;
+     /*   margin-top: 500px;
+        margin-bottom: 0;
+        margin-left:auto;
+        margin-right:auto;*/
+        margin: 0 auto;
 	position: relative;
+        
 }
 
-#header {
-	margin: 0px auto 0px auto;
+#content {
+    /*scenario:under 'Archieve', you will find that some post'links will be overlapped by 'canvas'*/
+        /*make that link un cliclable*/
+        /*that's why we set 'z-index' greatter than #myCanvas*/
 }
 
 #footer {
-	width: 500px;
-	margin: 50px auto 20px auto;
+	margin: 50px auto 0 auto;
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #073642;
@@ -132,10 +143,14 @@ h3 {
 }
 
 #sidebar {
-	position: absolute;
-	text-align: right;
+	position: fixed;
+	text-align: left;
 	width: 160px;
-	left: -240px;
+/*	left: 240px;
+        top: 300px;*/
+        left:0;
+        top:0;
+        z-index: 10003;/*in order to overlap 'header'*/
 }
 
 #sidebar li {
@@ -150,7 +165,17 @@ h3 {
 	padding: 2px 4px;
 }
 
-
+/*added by Peterson Lian*/
+/***canvas for bubble effect***/
+/***style the 'canvas' aforementioned***/
+#myCanvas {
+    position: absolute;
+/*    height: 40px;
+    width: 1000px;*/
+    top: -150px;/*move 100px up*/
+    left: 14%;
+/*    border-bottom: 1px dotted blue;*/
+}
 
 /*** Posts ***/
 article {
@@ -232,11 +257,36 @@ img.center {
 }*/
 /***end of navigation***/
 
+.header{
+    width:100%;
+    height:250px;/*canvas' content-height*/
+    top:0;
+/*    border-bottom:1px solid red;*/
+    Background: inherit;
+    z-index:10002;/*inorder to overlap 'content'*/
+}
+
+.footer{
+    width:100%;
+    Background:inherit;
+    bottom:0;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.copyright{
+    width: 870px;/*if don't specify width, the cetering action(the following line) will take no effect*/
+    margin:0 auto;
+}
+/*end of PetersonLian adding...*/
+
 
 /*** Media Queries ***/
 @media all and (max-width: 870px) {
 
-	#page, #header, #content, #footer {
+	#page, #content, #footer {
 		width: inherit;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -289,24 +339,7 @@ img.center {
 .icon-sun:before { content: '\e801'; }
 .icon-anchor:before { content: '\e800'; }
 .icon-anchor {
-	font-size: 65%;
+	font-siz0e: 65%;
 }
 
-/*added by Peterson Lian*/
-/*post_navigation ul*/
-.post_navigation li{
-    list-style : none;
-}
 
-/*added by Peterson Lian*/
-/***canvas for bubble effect***/
-/***style the 'canvas' aforementioned***/
-#canvas-header {/*a 'header' element*/
-    position: relative;
-    height: 500px;
-}
-
-#myCanvas {
-    position: absolute;
-    left: 10%;
-}

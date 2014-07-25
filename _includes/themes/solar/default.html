@@ -19,15 +19,15 @@
 </head>
 
 <body>
-  <header id="canvas-header">
-    <canvas id="myCanvas"></canvas>
+  <header id="canvas-header" class="header">
+    <canvas id="myCanvas" ></canvas>
   </header>
 
   <div id="page">
 
 
 
-    <div id="sidebar">
+    <div id="sidebar" class="fixed">
       <nav>
         <ul>
           <li><a href="{{ BASE_PATH }}/index.html">Home</a></li>
@@ -35,7 +35,7 @@
           <li><a href="{{ BASE_PATH }}/about.html">About</a></li>
           <li><a href="{{ site.author.twitter }}">Twitter</a></li>
           <li><a href="{{ site.author.github }}">Github</a></li>
-          <li><a href="{{ BASE_PATH }}/rss.xml">RSS Feed</a></li>
+<!--          <li><a href="{{ BASE_PATH }}/rss.xml">RSS Feed</a></li>-->
         </ul>
       </nav>
     </div>
@@ -49,16 +49,16 @@
 
 
   </div>
+  
 
 
-
-  <footer id="footer">
+  <footer id="footer" class="footer fixed">
     <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }}
-    {{ site.name }}. Powered
-    by <a href="http://jekyllrb.com">Jekyll</a>, theme by
-    <a href="http://连培培.中国">Peterson Lian.</a>Theme evolved from a
-    repo <a href="https://github.com/redwallhp/solar-theme-jekyll">Solar
-    Theme for Jekyll</a>
+      {{ site.name }}. Powered
+      by <a href="http://jekyllrb.com">Jekyll</a>, theme by
+      <a href="http://连培培.中国">Peterson Lian.</a>Theme evolved from a
+      repo <a href="https://github.com/redwallhp/solar-theme-jekyll">Solar
+        Theme for Jekyll</a>
     </p>
   </footer>
 
