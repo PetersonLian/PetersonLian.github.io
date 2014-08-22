@@ -188,6 +188,7 @@ article h1 {
 }
 article h1 a {
 	border: none;
+        font-weight: bold;
 }
 article h1 a.anchor {
 	margin-left: 8px;

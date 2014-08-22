@@ -9,4 +9,5 @@ tags: [emacs, auto-complete, fly-spell]
 #Why doesn't auto-complete mode work in some modes?
 A: please make sure these modes don't have a fly-spell minor mode opening.
 #What if my fly-spell minor mode is automaticaly opened?
-A:well.I don't know what to do yet.Simplly turnning off fly-spell doesn't make ac mode working.
+A:well.I don't know what to do yet.Currently I manually close fly-spell mode in the specified buffer and
+then invoke Auto-Complete-mode
