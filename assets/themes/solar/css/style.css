@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 120%;        /*default 100% == 16px*/
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -33,7 +33,7 @@ table {
 /*** Basics ***/
 body {
 	font-family: Verdana, serif;
-	font-size: 18px;
+	font-size: 0.8em;
 	line-height: 1.7;
 }
 
@@ -52,7 +52,7 @@ ul, ol { padding: 0 0 18px 30px; }
 ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
-small { font-size: 0.85em; }
+small { font-size: 0.75em; }
 sup { vertical-align: super; font-size: 0.85em; }
 sub { vertical-align: sub; font-size: 0.85em; }
 
@@ -77,15 +77,15 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 25px;
+	font-size: 1.2em;
 	margin: 0 0 10px 0;
 }
 h2 {
-	font-size: 20px;
+	font-size: 1.1em;
 	margin: 0 0 10px 0;
 }
 h3 {
-	font-size: 18px;
+	font-size: 1em;
 	margin: 0 0 10px 0;
 }
 
@@ -183,12 +183,19 @@ article {
 	margin-bottom: 40px;
 }
 
-article h1 {
+article h1 {        
 	margin: 0 0 10px 0;
 }
+
+article > h1 {
+    font-size: 1.3em;
+    color: Black;
+}
+
 article h1 a {
 	border: none;
         font-weight: bold;
+        color: black;
 }
 article h1 a.anchor {
 	margin-left: 8px;
