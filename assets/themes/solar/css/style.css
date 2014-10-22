@@ -33,7 +33,7 @@ table {
 /*** Basics ***/
 body {
 	font-family: Verdana, serif;
-	font-size: 0.8em;
+	/* font-size: 0.8em; */
 	line-height: 1.7;
 }
 
