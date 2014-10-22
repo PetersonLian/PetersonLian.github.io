@@ -19,10 +19,13 @@ h1, h2, h3 {
 	color: #cb4b16;
 }
 
-h1 a, h1 a:visited, h1 a:active {
-	color: #cb4b16;
+h1 a {
+	color: black;
+        transition: color 1s linear 0;
 }
-
+h1 a:visited, h1 a:active {
+    color: gray;
+}
 h1 a:hover {
 	background-color: #073642;
 	border-color: #073642;
