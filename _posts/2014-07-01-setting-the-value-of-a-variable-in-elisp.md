@@ -2,8 +2,8 @@
 layout: post
 title: "Setting the Value of a Variable in elisp"
 description: ""
-category: "elisp"
-tags: []
+category: "quzs"
+tags: [elisp]
 ---
 {% include JB/setup %}
 

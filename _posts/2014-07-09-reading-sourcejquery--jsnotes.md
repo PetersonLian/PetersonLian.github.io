@@ -2,8 +2,8 @@
 layout: post
 title: "reading source:jquery & js;notes"
 description: ""
-category: jquery
-tags: [jquery, js, notes]
+category: javascript
+tags: [jquery, javascripts, source, notes]
 ---
 * * *
 Code:  
