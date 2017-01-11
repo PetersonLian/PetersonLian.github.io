@@ -10,6 +10,7 @@ tags : [jekyll]
 ## jekyll使用markdown和liquid语法，来生成需要的静态页面。同时伴有YAML语法
 ### liquid
 语法参见 [链接一](http://www.cnblogs.com/lslvxy/p/3651936.html)
+[liquid官网](https://help.shopify.com/themes/liquid/basics)
 ### YAML语法参见
 ### include JB/setup
 JB下面有setup文件

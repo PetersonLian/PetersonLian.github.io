@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="{{ ASSET_PATH }}/i/favicon.png">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/css/amazeui.min.css"/>
+  <style>
+    @media only screen and (min-width: 1200px) {
+      .blog-g-fixed {
+        max-width: 1200px;
+      }
+    }
+
+    @media only screen and (min-width: 641px) {
+      .blog-sidebar {
+        font-size: 1.4rem;
+      }
+    }
+
+    .blog-main {
+      padding: 20px 0;
+    }
+
+    .blog-title {
+      margin: 10px 0 20px 0;
+    }
+
+    .blog-meta {
+      font-size: 14px;
+      margin: 10px 0 20px 0;
+      color: #222;
+    }
+
+    .blog-meta a {
+      color: #27ae60;
+    }
+
+    .blog-pagination a {
+      font-size: 1.4rem;
+    }
+
+    .blog-team li {
+      padding: 4px;
+    }
+
+    .blog-team img {
+      margin-bottom: 0;
+    }
+
+    .blog-content img,
+    .blog-team img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .blog-footer {
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<header class="am-topbar">
+  <h1 class="am-topbar-brand">
+    <a href="#">blog</a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+          data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+      class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li><a href="{{ HOME_PATH }}">Home</a></li>      
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include JB/pages_list %}
+      <li style="display:none;" class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          菜单 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">标题</li>
+          <li >kong</li>
+        </ul>
+      </li>
+    </ul>
+
+    <form style="display:none;" class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+      <div class="am-form-group">
+        <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+      </div>
+      <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
+    </form>
+
+  </div>
+</header>
+
+<div class="am-g am-g-fixed blog-g-fixed">
+  {{ content }}
+
+  <div class="am-u-md-4 blog-sidebar">
+    <div class="am-panel-group">
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">关于我(about Me)</div>
+        <div class="am-panel-bd">
+          <p>连培培(Peterson) is a {{ 'now' | date: "%Y" | minus:1992 }} years old guy living in mainland China, earning very low payroll and hoping to see the world better with <a href="http://www.github.com">Github</a>.<br>  
+   I am very happy to meet your.</p>
+          <a class="am-btn am-btn-success am-btn-sm" href="{{ BASE_PATH }}/about.html">更多 →</a>
+        </div>
+      </section>
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd">文章目录<span style="margin-left: 10px;"><small><a href="{{ BASE_PATH }}/archive">所有文章</a></small></span></div>
+        <ul class="am-list blog-list">
+          {% assign maxAllowedNum = 3 %}
+          {% assign maxAllowedTitleNum = 70 %}
+          {% assign tmpPostsNum = site.posts.size %}
+          {% if tmpPostsNum <= maxAllowedNum %}
+                              {% for post in site.posts %}
+                              <li><a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}"><span>{{ post.date | date_to_string }}</span> &raquo; {{ post.title  | truncate: maxAllowedTitleNum }}</a>
+                              </li>
+                              {% endfor %}                    
+          {% else %}
+                              {% for i in (0...maxAllowedNum) %}
+                              {% assign post = site.posts[i] %}
+                              <li><a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}"><span>{{ post.date | date_to_string }}</span> &raquo; {{ post.title | truncate: maxAllowedTitleNum }}</a>
+                              </li>
+                              {% endfor %}                    
+          {% endif %}          
+        </ul>
+      </section>
+
+      <section style="display: none;" class="am-panel am-panel-default">
+        <div class="am-panel-hd">团队成员</div>
+        <div class="am-panel-bd">
+          <ul class="am-avg-sm-4 blog-team">
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230159_kjTmC.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230220_F5LiM.thumb.224_0.jpeg" alt=""/>
+            </li>
+            <li><img class="am-thumbnail"
+                     src="http://img4.duitang.com/uploads/blog/201406/15/20140615230159_kjTmC.thumb.224_0.jpeg" alt=""/>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</div>
+
+<footer class="blog-footer">
+  <p>Contact Me?<br/>
+    <small>Just email me:<lianpeipei202@gmail.com> or <653409768@qq.com>.</small>
+  </p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="{{ ASSET_PATH }}/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="{{ ASSET_PATH }}/js/amazeui.min.js"></script>
+<!--   <script type="text/javascript"> -->
+<!--     if(jQuery){ -->
+<!--         $('body').delegate('click', '.am-topbar-nav>li', function(){ -->
+<!--             var $this = $(this), $nav = $this.parent(); -->
+<!--             $this.siblings().removeClass('am-active'); -->
+<!--             $this.addClass('am-active'); -->
+<!--         }); -->
+<!--     } -->
+<!-- </script> -->
+{% include JB/analytics %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div class="am-u-md-8">
+  <article class="blog-main">
+    <h1 class="am-article-title blog-title">
+      {{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
+    </h1>
+    <h4 class="am-article-meta blog-meta">by <a href="">open</a> posted on 2014/06/17<br>
+      catetories:
+      {% unless page.categories == empty %}
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+      {% endunless %}
+      {% unless page.tags == empty %}
+      tags:
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+      {% endunless %}  
+    </h4>
+    
+    <div class="am-g blog-content">
+      <div class="am-u-sm-12">
+        {{ content }}        
+      </div>
+    </div>
+  </article>
+
+  <ul class="am-pagination blog-pagination">
+    {% if page.previous %}
+      <li class="am-pagination-prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
+    {% else %}
+      <li class="am-pagination-prev disabled"><a>&larr; Previous</a></li>
+    {% endif %}
+    {% if page.next %}
+      <li class="am-pagination-next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+    {% else %}
+      <li class="am-pagination-next disabled"><a>Next &rarr;</a>
+    {% endif %}
+    </ul>
+</div>
