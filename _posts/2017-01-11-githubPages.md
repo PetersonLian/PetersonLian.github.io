@@ -22,7 +22,7 @@ JB下面有setup文件
 说明，需要设置`theme.name`，否则会资源文件404
 当前，存在两个情况。
 
-*    情况一，很早之前（一开始），我在`_layouts/default.html`里头定义了`theme.name`
+*   情况一，很早之前（一开始），我在`_layouts/default.html`里头定义了`theme.name`
 
         ---
         theme : 
@@ -32,6 +32,8 @@ JB下面有setup文件
         !% include themes/solar/default.html %!
 又由于`_layouts/`下面的所有html文件，都有一个`layout: default`,从而能保证`theme.name`在所有地方都被定义了，并且为`solar`，从而不会报错
 
-*    情况二，之后。情况一失效了。所以，目前的解决方案只能在每一个页面(譬如index.md, 2016-xxxx-xx.md)一开始，就用`YAML`语法定义`theme.name`
+*   情况二，之后。情况一失效了。所以，目前的解决方案可以是在每一个页面(譬如index.md, 2016-xxxx-xx.md)一开始，就用`YAML`语法定义`theme.name`
 
+    但我此处采用了另一种方案。在_includes/下新建custom/setup。然后再_config.yml里头的JB选项下配置setup选项。便于custom/setup里头使用。从而最终将asset路径配置正确
+    参考。[Jekyll Global Variables](http://jekyllrb.com/docs/variables/); custom/setup的编写，则使用 liquid 语法
     
