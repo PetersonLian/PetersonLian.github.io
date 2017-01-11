@@ -11,7 +11,7 @@ show_drafts: true
 permalink: /blog/:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: Rouge
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -25,7 +25,7 @@ author :
   twitter : https://twitter.com/PetersonLian
   weibo: http://weibo.com/u/2143729774
   feedburner : TBC
-
+   
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -84,6 +84,11 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
+
+  # Added By Peterson Lian
+  setup:
+    provider: custom
+    customTheme: solar
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
