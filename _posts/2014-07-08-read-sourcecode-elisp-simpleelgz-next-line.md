@@ -3,7 +3,7 @@ layout: post
 title: "Read Sourcecode Elisp 'simple.el.gz' 'next line'"
 description: ""
 category: "emacs"
-tags: [read, source, elisp]
+tags: [elisp]
 ---
 {% include JB/setup %}
 #How to find file 'simple.el.gz'?

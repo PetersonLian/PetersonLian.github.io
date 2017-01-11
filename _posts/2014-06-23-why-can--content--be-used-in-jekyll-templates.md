@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "why can '{{ content }}' be used in Jekyll templates"
-category: quzs
-tags: [liquid, {{content}}, jekyll, template]
+category: jekyll
+tags: [liquid, jekyll]
 ---
 {% include JB/setup %}
 #Question: why can '{{ content }}' be used in Jekyll templates？         

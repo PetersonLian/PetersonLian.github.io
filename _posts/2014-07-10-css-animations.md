@@ -3,7 +3,7 @@ layout: post
 title: "CSS animations"
 description: "css3 animation; css3 properties"
 category: "html&css" 
-tags: [CSS3, animation, property]
+tags: [css3, css-animation]
 ---
 {% include JB/setup %}
 CSS3 Animations

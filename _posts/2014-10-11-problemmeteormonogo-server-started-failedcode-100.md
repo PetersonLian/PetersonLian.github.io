@@ -3,7 +3,7 @@ layout: post
 title: "Problem|meteor|monogo server started failed|code 100"
 description: "this is the diary recording me resovling a problem"
 category: meteor
-tags: [meteor, monogdb, failed]
+tags: [meteor]
 ---
 {% include JB/setup %}
 Must *first* watch this [comment](http://stackoverflow.com/questions/10103830/problems-to-run-examples-in-meteor#answer-15752736) from this [question](http://stackoverflow.com/questions/10103830/problems-to-run-examples-in-meteor) in stackoverflow.com.    

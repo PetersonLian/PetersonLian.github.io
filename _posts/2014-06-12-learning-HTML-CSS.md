@@ -2,7 +2,7 @@
 layout : post
 category : html&css
 tagline : "notes"
-tags : [html, css, note]
+tags : [html, css]
 ---
 {% include JB/setup %}
 

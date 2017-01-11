@@ -2,7 +2,7 @@
 layout: post
 title: "Setting the Value of a Variable in elisp"
 description: ""
-category: "quzs"
+category: "emacs"
 tags: [elisp]
 ---
 {% include JB/setup %}

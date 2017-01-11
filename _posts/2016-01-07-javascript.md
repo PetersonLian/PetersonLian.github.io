@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : javascript
 tagline: "Supporting tagline"
 tags : ['javascript']
 ---

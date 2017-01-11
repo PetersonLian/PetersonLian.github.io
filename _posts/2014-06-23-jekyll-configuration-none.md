@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "jekyll configuration none?"
-category: quzs
-tags: [quzs, jekyll]
+category: jekyll
+tags: [jekyll]
 ---
 {% include JB/setup %}
 #When I run `jekyll serve` locally, the output has "Configuration:none" outcome and cannot be accessed through my browser.Why?

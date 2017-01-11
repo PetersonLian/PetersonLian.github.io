@@ -1,9 +1,9 @@
 ---
 layout: post
 title: learn JQuery
-tagline: "JQuery"
+tagline: "jQuery"
 category: javascript
-tags: [javascript, JQuery]
+tags: [javascript, jQuery]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "centering(margin:0 auto) takes no effect(not working)"
 description: ""
-category: quz
-tags: [css, center]
+category: html&css
+tags: [css]
 ---
 {% include JB/setup %}
 #why does action centering(margin:0 auto) takes no effect(not working)?
