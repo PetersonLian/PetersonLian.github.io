@@ -88,7 +88,9 @@ JB :
   # Added By Peterson Lian
   setup:
     provider: custom
-    customTheme: solar
+    customTheme: twitter
+#    customTheme: bootstrap-3
+#    customTheme: solar
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

@@ -2,4 +2,9 @@
 layout: default
 ---
 {% include JB/setup %}
+{% if site.JB.setup.customTheme%}
+{% capture lppTmp %}themes/{{ site.JB.setup.customTheme }}/post.html{% endcapture %}
+{% include {{ lppTmp }} %}
+{% else %}
 {% include themes/solar/post.html %}
+{% endif %}

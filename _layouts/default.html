@@ -3,4 +3,9 @@ theme :
       name : solar
 ---
 {% include JB/setup %}
+{% if site.JB.setup.customTheme%}
+{% capture lppTmp %}themes/{{ site.JB.setup.customTheme }}/default.html{% endcapture %}
+{% include {{ lppTmp }} %}
+{% else %}
 {% include themes/solar/default.html %}
+{% endif %}
