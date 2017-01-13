@@ -86,6 +86,10 @@ JB :
   rss_path : /rss.xml
 
   # Added By Peterson Lian
+  categories_list:
+    provider: custom
+  tags_list:
+    provider: custom
   setup:
     provider: custom
     customTheme: amazeui
